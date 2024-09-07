@@ -1,0 +1,362 @@
+/* Importa a fonte Poppins Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Poppins', sans-serif; /* Define a fonte Poppins para o corpo da página */
+    background-color: #DDDDDD; /* Cor de fundo clara */
+    background-image: url('/assets/images/fundo.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobre toda a área do fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa durante o rolar da página */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Altura total da janela de visualização */
+    margin: 0; /* Remove margens padrão */
+    padding-bottom: 50px; /* Espaçamento na parte inferior */
+}
+
+/* Estiliza o cabeçalho */
+header {
+    margin-top: 50px; /* Espaçamento no topo do cabeçalho */
+}
+
+/* Animação de batida do coração para o título */
+@keyframes batida-coracao {
+    0% {
+        transform: perspective(600px) translateZ(20px) scale(1);
+    }
+    25% {
+        transform: perspective(600px) translateZ(20px) scale(1.1);
+    }
+    50% {
+        transform: perspective(600px) translateZ(20px) scale(1);
+    }
+    75% {
+        transform: perspective(600px) translateZ(20px) scale(1.1);
+    }
+    100% {
+        transform: perspective(600px) translateZ(20px) scale(1);
+    }
+}
+
+/* Estiliza os títulos h1 */
+h1 {
+    font-size: 4rem; /* Tamanho da fonte */
+    color: #0094b2; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    letter-spacing: 0.4rem; /* Espaçamento entre letras */
+    margin-bottom: 0; /* Remove a margem inferior */
+    position: relative; /* Permite o uso de posicionamento absoluto para elementos filhos */
+    text-shadow: 
+        4px 4px 0 rgba(0, 0, 0, 0.4), 
+        8px 8px 0 rgba(0, 0, 0, 0.3), 
+        12px 12px 0 rgba(0, 0, 0, 0.2); /* Adicionar sombra ao texto para criar profundidade */
+    animation: batida-coracao 3s ease-in-out forwards; /* Animação de 3 segundos, uma vez */
+}
+
+/* Estiliza os parágrafos */
+p {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #0094b2; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    margin-top: 0; /* Remove a margem superior */
+}
+
+/* Estiliza as seções da página */
+section {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    margin-bottom: 1rem; /* Espaçamento na parte inferior */
+}
+
+/* Estiliza os inputs dentro das seções */
+section input {
+    width: 30rem; /* Largura dos campos de entrada */
+    border: none; /* Remove a borda padrão */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 1.5rem; /* Bordas arredondadas */
+    margin-bottom: 1rem; /* Espaçamento na parte inferior */
+    color: #45474B; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui a borda e o preenchimento na largura total */
+}
+
+/* Estiliza os botões dentro das seções */
+section button {
+    padding: 0.8rem 1.2rem; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 1.5rem; /* Bordas arredondadas */
+    background-color: #0094b2; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    cursor: pointer; /* Cursor em forma de mão ao passar sobre o botão */
+    margin-right: 10px; /* Espaço entre os botões */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+section button:hover {
+    background-color: #007a8d; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o container dos botões */
+.button-container {
+    display: flex;
+    gap: 10px; /* Espaço entre os botões */
+}
+
+/* Estiliza a caixa de resultados da pesquisa */
+.resultados-pesquisa {
+    width: 75rem; /* Largura da caixa de resultados */
+    height: 45vh; /* Altura da caixa de resultados */
+    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
+    margin-top: 10px; /* Espaçamento no topo */
+    margin-bottom: 60px; /* Espaçamento na parte inferior */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 0.6rem; /* Bordas arredondadas */
+}
+
+/* Estiliza cada item de resultado */
+.item-resultado {
+    background: #f0f8ffcc; /* Cor de fundo */
+    border-radius: 1rem; /* Bordas arredondadas */
+    padding: 1.5rem; /* Espaçamento interno */
+    margin: 0.5rem; /* Espaçamento ao redor */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar o item */
+}
+
+/* Estilo flex para organizar o conteúdo */
+.conteudo {
+    display: flex;
+    align-items: center; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    flex-wrap: wrap; /* Permite a quebra de linha se necessário */
+}
+
+/* Estiliza o texto ao lado do vídeo */
+.info-texto {
+    flex: 1; /* Permite que o texto ocupe o espaço disponível */
+    max-width: 50%; /* Largura máxima do texto */
+    padding-right: 1rem; /* Espaçamento à direita */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #0078a0; /* Cor do texto */
+    margin-bottom: 1rem; /* Espaçamento na parte inferior */
+    text-align: center; /* Alinha o título ao centro */
+}
+
+/* Estiliza os links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #0078a0; /* Cor do link */
+    font-weight: bold; /* Negrito no link */
+}
+
+.item-resultado a:hover {
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}
+
+/* Estiliza a descrição meta dentro dos itens de resultado */
+.descricao-meta {
+    color: #333; /* Cor do texto */
+    margin: 1rem 0; /* Espaçamento superior e inferior */
+    font-size: 1rem; /* Tamanho da fonte */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+/* Estiliza o iframe (vídeo do YouTube) */
+.video {
+    width: 45%; /* Largura do vídeo */
+    height: 300px; /* Altura do vídeo */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transição suave para transformações e sombras */
+}
+
+/* Efeito hover para ampliar o vídeo */
+.video:hover {
+    transform: scale(1.1); /* Aumenta o vídeo em 10% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao passar o mouse */
+}
+
+/* Estilo para mensagens de erro */
+.mensagens {
+    background-color: #bc515cb0; /* Cor de fundo para erro (vermelho claro) */
+    color: #ffffff; /* Cor do texto */
+    border: 1px solid #ffffff; /* Borda da caixa */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    position: absolute; /* Posiciona a mensagem em relação ao elemento pai */
+    left: 50%; /* Alinha horizontalmente ao centro */
+    top: calc(50% + 100px); /* Ajusta a posição vertical, abaixo do input */
+    transform: translateX(-50%); /* Centraliza horizontalmente */
+    width: 80%; /* Largura da caixa de mensagens */
+    max-width: 500px; /* Largura máxima da caixa de mensagens */
+    text-align: center; /* Centraliza o texto dentro da caixa de mensagens */
+}
+
+/* Estiliza a área de mensagens de erro */
+.mensagens p {
+    margin: 0; /* Remove a margem padrão */
+    color: #f5f7f8; /* Cor do texto dentro da mensagem */
+}
+
+/* Estiliza o botão de fechar na área de mensagens */
+.mensagens .fechar {
+    position: absolute; /* Posiciona o botão de fechar de forma absoluta */
+    top: 10px; /* Distância do topo */
+    right: 10px; /* Distância da direita */
+    cursor: pointer; /* Cursor em forma de mão ao passar sobre o botão */
+    font-size: 20px; /* Tamanho da fonte */
+    color: #721c24; /* Cor do botão de fechar */
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+}
+
+/* Efeito de hover para o botão de fechar */
+.mensagens .fechar:hover {
+    color: #f5c6cb; /* Cor do botão de fechar ao passar o mouse */
+}
+
+/* Estiliza o rodapé da página */
+footer {
+    background-color: #f5f7f885; /* Cor de fundo do rodapé */
+    color: #45474B; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Espaçamento interno */
+    width: 100%; /* Largura total */
+    position: fixed; /* Mantém o rodapé fixo na parte inferior */
+    bottom: 0; /* Posiciona na parte inferior da página */
+    left: 0; /* Alinha à esquerda */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar destaque */
+}
+
+/* Estiliza o parágrafo dentro do rodapé */
+footer p {
+    margin-top: 10px; /* Margem superior */
+    font-size: 20px; /* Tamanho da fonte */
+    color: #f5f7f8; /* Cor do texto */
+}
+
+/* Estiliza o conteúdo do rodapé */
+.footer-content {
+    display: flex; /* Usa flexbox para organizar o conteúdo */
+    justify-content: space-between; /* Espaça o conteúdo igualmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    width: 90%; /* Largura do conteúdo do rodapé */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Estiliza os parágrafos dentro do conteúdo do rodapé */
+.footer-content p {
+    margin: 0; /* Remove a margem padrão */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+/* Estiliza os ícones sociais dentro do rodapé */
+.social {
+    display: flex; /* Usa flexbox para organizar os ícones */
+    gap: 1rem; /* Espaço entre os ícones */
+    color: #f5f7f8; /* Cor dos ícones sociais */
+}
+
+/* Estiliza as imagens dos ícones sociais */
+.social a img {
+    width: 25px; /* Largura dos ícones */
+    height: 25px; /* Altura dos ícones */
+}
+
+/* Media queries para responsividade */
+
+/* Para dispositivos menores (tablets, telas menores) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem; /* Tamanho da fonte do título */
+        letter-spacing: 0.2rem; /* Espaçamento entre letras */
+    }
+
+    section input {
+        width: 20rem; /* Largura dos campos de entrada */
+    }
+
+    .resultados-pesquisa {
+        width: 40rem; /* Largura da caixa de resultados */
+    }
+
+    .conteudo {
+        flex-direction: column; /* Alinha os itens em coluna */
+    }
+
+    .info-texto {
+        max-width: 100%; /* Largura máxima do texto */
+        padding-right: 0; /* Remove o preenchimento à direita */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+
+    .video {
+        width: 100%; /* Largura do vídeo */
+        height: 200px; /* Altura do vídeo */
+        margin-top: 1rem; /* Espaçamento no topo */
+    }
+}
+
+/* Para dispositivos móveis (smartphones) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem; /* Tamanho da fonte do título */
+        letter-spacing: 0.1rem; /* Espaçamento entre letras */
+    }
+
+    section input {
+        width: 15rem; /* Largura dos campos de entrada */
+        padding: 0.8rem; /* Espaçamento interno */
+    }
+
+    section button {
+        padding: 0.6rem 1rem; /* Espaçamento interno dos botões */
+    }
+
+    .resultados-pesquisa {
+        width: 100%; /* Largura da caixa de resultados */
+        height: 550px; /* Altura da caixa de resultados */
+    }
+
+    .conteudo {
+        flex-direction: column; /* Alinha os itens em coluna */
+    }
+
+    .info-texto {
+        max-width: 100%; /* Largura máxima do texto */
+        padding-right: 0; /* Remove o preenchimento à direita */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+
+    .video {
+        width: 100%; /* Largura do vídeo */
+        height: 200px; /* Altura do vídeo */
+        margin-top: 1rem; /* Espaçamento no topo */
+    }
+
+    footer {
+        margin-bottom: 0; /* Remove a margem inferior */
+    }
+}
+
+/* Estilo para quando as cores forçadas estão ativas (acessibilidade) */
+@media (forced-colors: active) {
+    body {
+        background-color: Canvas; /* Cor de fundo padrão */
+        color: CanvasText; /* Cor do texto padrão */
+    }
+
+    a {
+        color: LinkText; /* Cor dos links */
+    }
+}

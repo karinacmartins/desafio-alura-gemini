@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configura a viewport para dispositivos móveis, garantindo que o layout seja responsivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo de estilos CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Define o ícone da aba do navegador -->
+    <link rel="icon" href="assets/images/icone.png">
+    <!-- Título da página exibido na aba do navegador -->
+    <title>FitEssence</title>
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Título principal da página -->
+        <h1>FitEssence</h1>
+    </header>
+    <main>
+        <!-- Texto principal da seção -->
+        <p>Essência de Saúde e Bem-estar</p>
+        <section>
+           
+            <!-- Campo de entrada para pesquisa -->
+            <input type="text" placeholder="Encontre o treino perfeito para você" id="campo-pesquisa"
+                onkeydown="if (event.key === 'Enter') pesquisar()">
+            <!-- Contêiner para os botões de ação -->
+            <div class="button-container">
+                <!-- Botão para iniciar a pesquisa -->
+                <button onclick="pesquisar()">Pesquisar</button>
+                <!-- Botão para limpar o campo de pesquisa -->
+                <button onclick="limparCampo()">Limpar</button>
+            </div>
+        </section>
+
+        <!-- Caixa de mensagens de erro ou nulo -->
+        <div id="caixa-mensagens" class="mensagens" style="display: none;" role="alert" aria-live="assertive">
+            <!-- Botão para fechar a mensagem -->
+            <button id="fechar-mensagem" class="fechar" aria-label="Fechar mensagem">&times;</button>
+            <!-- Parágrafo para exibir a mensagem de erro -->
+            <p id="mensagem-erro"></p>
+        </div>
+
+        <!-- Área onde os resultados da pesquisa serão exibidos -->
+        <section class="resultados-pesquisa" id="resultados-pesquisa"></section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="footer-content">
+            <!-- Texto com direitos autorais -->
+            <p>&copy; 2024. KM Todos os direitos reservados.</p>
+            <!-- Contêiner para os ícones de redes sociais -->
+            <div class="social">
+                <!-- Texto indicando que a página foi criada com amor -->
+                <span>Made with 🤍</span>
+                <!-- Link para o perfil do Instagram -->
+                <a href="https://www.instagram.com/karinamartins_eu/" target="_blank" aria-label="Instagram de Karina Martins">
+                    <img src="assets/images/instagram.svg" alt="Ícone do Instagram de Karina Martins">
+                </a>
+                <!-- Link para o perfil do LinkedIn -->
+                <a href="https://www.linkedin.com/in/karinacmartins/" target="_blank" aria-label="LinkedIn de Karina Martins">
+                    <img src="assets/images/linkedin.svg" alt="Ícone do LinkedIn de Karina Martins">
+                </a>
+                <!-- Link para o perfil do GitHub -->
+                <a href="https://github.com/karinacmartins" target="_blank" aria-label="GitHub de Karina Martins">
+                    <img src="assets/images/github.svg" alt="Ícone do GitHub de Karina Martins">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript com dados -->
+    <script src="assets/js/dados.js"></script>
+    <!-- Link para o arquivo JavaScript com funcionalidades da aplicação -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
