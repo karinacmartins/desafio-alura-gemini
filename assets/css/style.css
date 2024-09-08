@@ -1,6 +1,17 @@
 /* Importa a fonte Poppins Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* Força a largura total da página a não exceder a viewport */
+* {
+    box-sizing: border-box;
+}
+
+/* Remove o overflow horizontal */
+html, body {
+    overflow-x: hidden;
+}
+
+
 /* Estiliza o corpo da página */
 body {
     font-family: 'Poppins', sans-serif; /* Define a fonte Poppins para o corpo da página */
@@ -18,10 +29,14 @@ body {
     padding-bottom: 50px; /* Espaçamento na parte inferior */
 }
 
-/* Estiliza o cabeçalho */
 header {
-    margin-top: 50px; /* Espaçamento no topo do cabeçalho */
+    margin-top: 60vh; /* Usa unidades de viewport para espaçamento responsivo */
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    width: 100%; /* Garante que o cabeçalho ocupa a largura total */ 
+    position: relative;
 }
+
+
 
 /* Animação de batida do coração para o título */
 @keyframes batida-coracao {
@@ -111,13 +126,35 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 75rem; /* Largura da caixa de resultados */
-    height: 45vh; /* Altura da caixa de resultados */
+    height: 400px; /* Altura da caixa de resultados */
     overflow-y: auto; /* Adiciona rolagem vertical se necessário */
     margin-top: 10px; /* Espaçamento no topo */
     margin-bottom: 60px; /* Espaçamento na parte inferior */
     padding: 1rem; /* Espaçamento interno */
     border-radius: 0.6rem; /* Bordas arredondadas */
 }
+
+/* Estilo para a seção de boas-vindas */
+#boas-vindas {
+    background-color: #f5f7f8be; /* Cor de fundo clara */
+    color: #333; /* Cor do texto escura para contraste */
+    border: 2px solid #0078a0; /* Borda azul para destaque */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px auto; /* Margem externa automática para centralizar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    font-family: 'Arial', sans-serif; /* Fonte simples e legível */
+    font-size: 1.1em; /* Tamanho de fonte um pouco maior */
+    max-width: 90%; /* Garante que o elemento não ultrapasse a largura da tela */
+}
+
+#boas-vindas p {
+    margin: 0 0 10px 0; /* Margem inferior para separar os parágrafos */
+    padding: 0; /* Remove o padding padrão do parágrafo */
+}
+
+
 
 /* Estiliza cada item de resultado */
 .item-resultado {
@@ -134,6 +171,7 @@ section button:hover {
     align-items: center; /* Alinha os itens verticalmente */
     justify-content: space-between; /* Espaça os itens igualmente */
     flex-wrap: wrap; /* Permite a quebra de linha se necessário */
+    
 }
 
 /* Estiliza o texto ao lado do vídeo */
@@ -142,6 +180,9 @@ section button:hover {
     max-width: 50%; /* Largura máxima do texto */
     padding-right: 1rem; /* Espaçamento à direita */
     text-align: center; /* Alinha o texto ao centro */
+}
+.info-texto p {
+    font-size: 20px; 
 }
 
 /* Estiliza os títulos dentro dos itens de resultado */
@@ -277,6 +318,11 @@ footer p {
 
 /* Para dispositivos menores (tablets, telas menores) */
 @media (max-width: 768px) {
+
+    header {
+        margin-top: 15vh; /* Reduza o espaço superior */
+    }
+
     h1 {
         font-size: 2.5rem; /* Tamanho da fonte do título */
         letter-spacing: 0.2rem; /* Espaçamento entre letras */
@@ -309,6 +355,11 @@ footer p {
 
 /* Para dispositivos móveis (smartphones) */
 @media (max-width: 480px) {
+
+    header {
+        margin-top: 80vh; /* Reduza ainda mais o espaço superior */
+    }
+
     h1 {
         font-size: 2rem; /* Tamanho da fonte do título */
         letter-spacing: 0.1rem; /* Espaçamento entre letras */

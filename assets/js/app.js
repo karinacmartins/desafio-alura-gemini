@@ -4,11 +4,13 @@ function pesquisar() {
     let section = document.getElementById("resultados-pesquisa");
     let caixaMensagens = document.getElementById("caixa-mensagens");
     let mensagemErro = document.getElementById("mensagem-erro");
+    let boasVindas = document.getElementById("boas-vindas");
 
     // Limpa as mensagens de erro e os resultados anteriores
     caixaMensagens.style.display = "none";
     mensagemErro.innerHTML = "";
     section.innerHTML = ""; // Limpa os resultados anteriores
+    boasVindas.style.display = "none"; // Oculta a mensagem de boas-vindas
 
     // Obtém e remove espaços extras do valor do campo de pesquisa
     let campoPesquisa = document.getElementById("campo-pesquisa").value.trim();
@@ -78,7 +80,7 @@ function pesquisar() {
 
     // Se não houver resultados, exibe uma mensagem de erro
     if (!resultados) {
-        mensagemErro.innerHTML = "Desculpe, não temos esse tipo de treino disponível no site.";
+        mensagemErro.innerHTML = "Desculpe, não temos esse treino disponível no site. tente novamente!";
         caixaMensagens.style.display = "block"; // Mostra a caixa de erro
         section.innerHTML = ""; // Limpa os resultados anteriores
         return;
@@ -93,6 +95,7 @@ function limparCampo() {
     document.getElementById("campo-pesquisa").value = "";
     document.getElementById("resultados-pesquisa").innerHTML = ""; // Limpa os resultados
     document.getElementById("caixa-mensagens").style.display = "none"; // Oculta a caixa de mensagens
+    document.getElementById("boas-vindas").style.display = "block"; // Exibe a mensagem de boas-vindas
 }
 
 // Adiciona um evento para fechar a caixa de mensagens de erro quando o botão é clicado
@@ -105,4 +108,9 @@ document.getElementById("campo-pesquisa").addEventListener("keypress", function(
     if (event.key === "Enter") {
         pesquisar();
     }
+});
+
+// Exibe a mensagem de boas-vindas ao carregar a página
+document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById("boas-vindas").style.display = "block";
 });

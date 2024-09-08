@@ -123,7 +123,7 @@ let dados = [
         descricao: "Um treino de AeroHIIT para emagrecimento, combinando dança e exercícios intensos. Ideal para quem deseja perder peso de forma divertida e eficaz.",
         videoUrl: "https://www.youtube.com/embed/otDVwrGnZus",
         link: "https://youtu.be/otDVwrGnZus",
-        tags: ["AeroHIIT", "emagrecimento", "dança", "exercício intenso"]
+        tags: ["AeroHIIT", "emagrecimento", "dança", "exercício intenso", "hit"]
     },
     {
         titulo: "MEDITAÇÃO GUIADA E RESPIRAÇÃO PARA O EQUILÍBRIO INTERNO!",
@@ -222,7 +222,227 @@ let dados = [
         videoUrl: "https://www.youtube.com/embed/5zrLskUH9dk",
         link: "https://youtu.be/5zrLskUH9dk",
         tags: ["braços", "tonificação", "músculos durinhos", "treino intenso"]
-    }
+    },
+    {
+        titulo: "Aeróbico sem sair de casa",
+        descricao: "Treino aeróbico para fazer no conforto de sua casa. Queime calorias e mantenha-se em forma sem precisar de academia.",
+        videoUrl: "https://www.youtube.com/embed/jWM_plI6jhg",
+        link: "https://youtu.be/jWM_plI6jhg",
+        tags: ["aeróbico", "exercício em casa", "queima de calorias", "sem academia"]
+      },
+      {
+        titulo: "Como definir os braços SEM academia",
+        descricao: "Exercícios focados em tonificar os braços sem precisar de academia. Perfeito para quem deseja definição muscular em casa.",
+        videoUrl: "https://www.youtube.com/embed/JKDhdhUJg7k",
+        link: "https://youtu.be/JKDhdhUJg7k",
+        tags: ["braços", "definição muscular", "exercício em casa", "sem academia"]
+      },
+      {
+        titulo: "Treinando costas em casa",
+        descricao: "Treino focado em fortalecer e definir as costas sem precisar sair de casa.",
+        videoUrl: "https://www.youtube.com/embed/y9vdBBov8tA",
+        link: "https://youtu.be/y9vdBBov8tA",
+        tags: ["costas", "fortalecimento", "definição", "exercício em casa"]
+      },
+      {
+        titulo: "Definindo o abdômen com foco nos oblíquos, em casa!!",
+        descricao: "Exercícios para definir o abdômen com foco nos oblíquos. Tudo isso sem sair de casa.",
+        videoUrl: "https://www.youtube.com/embed/CB7fDOss_gA",
+        link: "https://youtu.be/CB7fDOss_gA",
+        tags: ["abdômen", "oblíquos", "definição", "exercício em casa"]
+      },
+      {
+        titulo: "4 minutos de HIIT para queimar muita gordura em pé",
+        descricao: "Treino HIIT de 4 minutos, ideal para queimar gordura de forma rápida e eficiente.",
+        videoUrl: "https://www.youtube.com/embed/tI2ao5zodqE",
+        link: "https://youtu.be/tI2ao5zodqE",
+        tags: ["HIIT", "queima de gordura", "exercício rápido", "em pé", "hit"]
+      },
+      {
+        titulo: "Treino completo pra aumentar as pernas EM CASA",
+        descricao: "Treino focado em aumentar o volume das pernas, ideal para ser feito em casa.",
+        videoUrl: "https://www.youtube.com/embed/C-ZaiwcYiLc",
+        link: "https://youtu.be/C-ZaiwcYiLc",
+        tags: ["pernas", "exercício em casa", "fortalecimento", "hipertrofia"]
+      },
+      {
+        titulo: "Treino focado nas coxas sem academia",
+        descricao: "Exercícios específicos para fortalecer e definir as coxas, sem a necessidade de academia.",
+        videoUrl: "https://www.youtube.com/embed/rFp4n7aQVk4",
+        link: "https://youtu.be/rFp4n7aQVk4",
+        tags: ["coxas", "definição", "exercício em casa", "sem academia"]
+      },
+      {
+        titulo: "Como engrossar batata da perna - treino de panturrilhas em casa",
+        descricao: "Treino focado em aumentar a massa muscular das panturrilhas, ideal para ser feito em casa.",
+        videoUrl: "https://www.youtube.com/embed/YR5QNC9uozE",
+        link: "https://youtu.be/YR5QNC9uozE",
+        tags: ["panturrilhas", "engrossar", "exercício em casa", "hipertrofia"]
+      },
+      {
+        titulo: "Treino COMPLETO de STEP para QUEIMAR CALORIAS e EMAGRECER",
+        descricao: "Treino completo utilizando step, ideal para queimar calorias e emagrecer de forma divertida.",
+        videoUrl: "https://www.youtube.com/embed/IopmdVTLuP0",
+        link: "https://youtu.be/IopmdVTLuP0",
+        tags: ["step", "queima de calorias", "emagrecimento", "treino completo"]
+      },
+      {
+        titulo: "Quer fazer um treino completo sem sair de casa?",
+        descricao: "Treino completo que pode ser feito em casa, sem a necessidade de equipamentos.",
+        videoUrl: "https://www.youtube.com/embed/i-n_ro2HLAE",
+        link: "https://youtu.be/i-n_ro2HLAE",
+        tags: ["treino completo", "exercício em casa", "sem equipamentos"]
+      },
+      {
+        titulo: "Treino Completo para queimar calorias e endurecer seu corpo em casa",
+        descricao: "Treino focado em queimar calorias e tonificar o corpo, tudo no conforto de casa.",
+        videoUrl: "https://www.youtube.com/embed/fEdxogic7bU",
+        link: "https://youtu.be/fEdxogic7bU",
+        tags: ["queima de calorias", "tonificação", "exercício em casa", "treino completo"]
+      },
+      {
+        titulo: "Desafio 10 Minutos de Prancha",
+        descricao: "Desafio de 10 minutos de prancha para fortalecer o core e melhorar a resistência.",
+        videoUrl: "https://www.youtube.com/embed/p_iue6JOBNY",
+        link: "https://youtu.be/p_iue6JOBNY",
+        tags: ["prancha", "core", "resistência", "desafio"]
+      },
+      {
+        titulo: "Treino para o corpo todo com step!",
+        descricao: "Treino que utiliza step para trabalhar o corpo todo e melhorar a resistência física.",
+        videoUrl: "https://www.youtube.com/embed/45XIA5rL9xs",
+        link: "https://youtu.be/45XIA5rL9xs",
+        tags: ["step", "corpo todo", "resistência", "exercício completo"]
+      },
+      {
+        titulo: "Que tal uma aula de Jump???",
+        descricao: "Uma aula divertida de jump, perfeita para queimar calorias e se divertir ao mesmo tempo.",
+        videoUrl: "https://www.youtube.com/embed/aA6XmrNG74c",
+        link: "https://youtu.be/aA6XmrNG74c",
+        tags: ["jump", "queima de calorias", "diversão", "exercício aeróbico"]
+      },
+      {
+        titulo: "Treino de JUMP para DERRETER!",
+        descricao: "Treino de jump de alta intensidade para queimar calorias e emagrecer rapidamente.",
+        videoUrl: "https://www.youtube.com/embed/OB6xy698XEo",
+        link: "https://youtu.be/OB6xy698XEo",
+        tags: ["jump", "queima de calorias", "emagrecimento", "alta intensidade"]
+      },
+      {
+        titulo: "Como acordar melhor e mais disposta TODOS OS DIAS",
+        descricao: "Dicas e exercícios simples para melhorar sua disposição e acordar com mais energia todos os dias.",
+        videoUrl: "https://www.youtube.com/embed/XDfjcFZjrJE",
+        link: "https://youtu.be/XDfjcFZjrJE",
+        tags: ["disposição", "energia", "dicas", "exercício matinal"]
+      },
+      {
+        titulo: "Treino fácil para os sedentários, vózinhas e vôzinhos se movimentarem em casa",
+        descricao: "Exercícios simples e de baixo impacto, perfeitos para sedentários e idosos que querem se movimentar em casa.",
+        videoUrl: "https://www.youtube.com/embed/yFl41hIRa6o",
+        link: "https://youtu.be/yFl41hIRa6o",
+        tags: ["exercício em casa", "baixo impacto", "idosos", "movimentação"]
+      },
+      {
+        titulo: "Como aliviar dor e tensão no pescoço!",
+        descricao: "Exercícios simples e rápidos para aliviar a dor e a tensão no pescoço.",
+        videoUrl: "https://www.youtube.com/embed/bzT9fetrKkc",
+        link: "https://youtu.be/bzT9fetrKkc",
+        tags: ["pescoço", "alívio de dor", "tensão", "alongamento"]
+      },
+      {
+        titulo: "Reggeaton Lento | Échame la Culpa - Suando e Dançando",
+        descricao: "Treino divertido com dança ao som de Reggeaton Lento. Queime calorias dançando e se divertindo.",
+        videoUrl: "https://www.youtube.com/embed/R6uHqRqmiSM",
+        link: "https://youtu.be/R6uHqRqmiSM",
+        tags: ["dança", "reggeaton", "queima de calorias", "diversão"]
+      },
+      {
+        titulo: "Bruno Mars - Finesse (Remix) [Feat. Cardi B] - Suando e Dançando",
+        descricao: "Dance ao som de Bruno Mars e Cardi B, queimando calorias e se divertindo ao mesmo tempo.",
+        videoUrl: "https://www.youtube.com/embed/lKF-Hq_XpVk",
+        link: "https://youtu.be/lKF-Hq_XpVk",
+        tags: ["dança", "Bruno Mars", "queima de calorias", "diversão"]
+      },
+      {
+        titulo: "Perder peso dançando",
+        descricao: "Vídeo que ensina a perder peso dançando, tornando o processo mais divertido e eficaz.",
+        videoUrl: "https://www.youtube.com/embed/D6FE5SdJ_NE",
+        link: "https://youtu.be/D6FE5SdJ_NE",
+        tags: ["dança", "perder peso", "diversão", "queima de calorias"]
+      },
+      {
+        titulo: "Aula de cardio pilates para tonificar o corpo todo",
+        descricao: "Aula de cardio pilates focada em tonificar o corpo inteiro, ideal para uma rotina de exercícios completa.",
+        videoUrl: "https://www.youtube.com/embed/THW4dgKQApM",
+        link: "https://youtu.be/THW4dgKQApM",
+        tags: ["cardio pilates", "tonificação", "corpo todo", "exercício completo"]
+      },
+      {
+        titulo: "Treino para peitoral em casa - como acabar com o Sovaco Suicida",
+        descricao: "Exercícios focados em definir o peitoral, ideal para realizar em casa.",
+        videoUrl: "https://www.youtube.com/embed/vGIOelDHfLI",
+        link: "https://youtu.be/vGIOelDHfLI",
+        tags: ["peitoral", "definição", "exercício em casa", "fortalecimento"]
+      },
+      {
+        titulo: "Super treino para Levantar os Seios",
+        descricao: "Treino específico para ajudar a levantar e tonificar os seios, realizado em casa.",
+        videoUrl: "https://www.youtube.com/embed/K3-lDmDXFAY",
+        link: "https://youtu.be/K3-lDmDXFAY",
+        tags: ["seios", "tonificação", "exercício em casa", "levantamento"]
+      },
+      {
+        titulo: "Treino completo SUPERIORES",
+        descricao: "Treino completo focado na parte superior do corpo, ideal para fortalecer braços, peito e costas.",
+        videoUrl: "https://www.youtube.com/embed/JBgZs6wjq3M",
+        link: "https://youtu.be/JBgZs6wjq3M",
+        tags: ["superiores", "fortalecimento", "exercício em casa", "treino completo"]
+      },
+      {
+        titulo: "Aula completa para acabar com os culotes - só 6 minutos",
+        descricao: "Aula rápida e eficaz para trabalhar e reduzir os culotes em apenas 6 minutos.",
+        videoUrl: "https://www.youtube.com/embed/vqj83Vp6M9g",
+        link: "https://youtu.be/vqj83Vp6M9g",
+        tags: ["culotes", "redução", "exercício rápido", "exercício em casa"]
+      },
+      {
+        titulo: "Exercícios para afinar a cintura em 3 minutos",
+        descricao: "Exercícios rápidos e eficazes para ajudar a afinar a cintura em apenas 3 minutos.",
+        videoUrl: "https://www.youtube.com/embed/G8dPXeg8y8o",
+        link: "https://youtu.be/G8dPXeg8y8o",
+        tags: ["cintura", "afinar", "exercício rápido", "em casa"]
+      },
+      {
+        titulo: "Como Fazer As Posturas De Yoga",
+        descricao: "Playlist com instruções detalhadas sobre como realizar as posturas de yoga corretamente.",
+        videoUrl: "https://www.youtube.com/embed/?list=PLliphiBhRpFg5bQ0WrWN6XbI3NKqxy7Cy",
+        link: "https://youtube.com/playlist?list=PLliphiBhRpFg5bQ0WrWN6XbI3NKqxy7Cy",
+        tags: ["yoga", "posturas", "aula de yoga", "flexibilidade"]
+      },
+      {
+        titulo: "Yoga para Flexibilidade",
+        descricao: "Playlist focada em melhorar a flexibilidade através de práticas de yoga.",
+        videoUrl: "https://www.youtube.com/embed/?list=PLliphiBhRpFhGcHuOpGCIJGH21Xcl6kLN",
+        link: "https://youtube.com/playlist?list=PLliphiBhRpFhGcHuOpGCIJGH21Xcl6kLN",
+        tags: ["yoga", "flexibilidade", "práticas de yoga", "alongamento"]
+      },
+      {
+        titulo: "Pular Corda do Zero | Iniciante",
+        descricao: "Aprenda a pular corda desde o início com este guia para iniciantes. Um treino divertido e eficiente para melhorar a coordenação e a resistência.",
+        videoUrl: "https://www.youtube.com/embed/i1NnSbOlMPI",
+        link: "https://youtu.be/i1NnSbOlMPI",
+        tags: ["pular corda", "iniciantes", "coordenação", "resistência"]
+      },
+      {
+        titulo: "Tonificar o CORPO TODO para Iniciantes com Carga!!!",
+        descricao: "Um treino completo para iniciantes que utiliza carga para tonificar todo o corpo. Ideal para quem quer um desafio adicional com halteres.",
+        videoUrl: "https://www.youtube.com/embed/V7Xo4ZwngQ4",
+        link: "https://youtu.be/V7Xo4ZwngQ4",
+        tags: ["tonificação", "iniciantes", "carga", "halter"]
+      }
+      
+      
+ 
     
     
   ];
